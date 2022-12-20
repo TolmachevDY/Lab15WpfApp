@@ -1,0 +1,303 @@
+﻿<Window x:Class="Lab15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Data/background.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <FlowDocumentScrollViewer x:Name="docViever">
+            <FlowDocument>
+                <Paragraph>
+                    <Floater Width="150" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/cup.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/Чемпионат_мира_по_футболу">ЧЕМПИОНАТ МИРА ПО ФУТБОЛУ</Hyperlink>
+                </Paragraph>
+                <Section FontSize="12">
+                    <Paragraph>
+                        Чемпионат мира по футболу всегда был и остается главным турниром в футбольном мире. Турнир включает в себя отборочный групповой раунд и финальную часть, во время которой команды определяют сильнейшую команду планеты. Турнир проводится раз в 4 года. За это время 209 сборные команды, представляющие все части света и континенты, проходят квалификацию, итогом которой являются стыковые матчи или прямая путевка на ЧМ.
+                        Финальные соревнования, проходят в рамках одного турнира под эгидой FIFA. Первый международный турнир на уровне национальных сборных в рамках нового формата состоялся в 1930 году на полях Уругвая. Сражения за чемпионский титул вели 13 сборных из Южной Америки и Европы. История мировых футбольных мундиалей насчитывает всего 21 турнир, который прошел на футбольных полях в 17 странах.
+                        Дважды главное мероприятие четырехлетия в футбольном мире принимали Германия, Мексика, Италия, Франция и Бразилия. По одному разу чемпионат проведение чемпионата мира было доверено 11 странам. В 2002 году ФИФА приняло решение провести игры мирового первенства по футболу сразу в двух странах, в Республике Корея и на стадионах Японии.
+                    </Paragraph>
+                </Section>
+                <Paragraph>
+                        РЕГЛАМЕНТ И ФОРМАТ ГЛАВНОГО ФУТБОЛЬНОГО ТУРНИРА
+                </Paragraph>
+                <Section FontSize="12">
+                    <Paragraph>
+                        В международном турнире на уровне сильнейших футбольных сборных участвуют лучшие команды Европы, Северной и Южной Америки, команды, представляющие Африканский континент, Азию и Океанию. Для получения путевки на чемпионат, команды распределяются по группам, которые составляются по региональному признаку. Основная финальная часть проводится на стадионах команды-хозяйки, которая определяется заблаговременно в результате голосования исполкома ФИФА. Этим же органом утверждается расписание квалификационного раунда, составляется календарь игр и сетка основного финального турнира.
+                        Результатом групповой стадии соревнования является первые два места в итоговой таблице. Далее лучшие команды выходят на стадию плей-офф, где поединки проводятся уже по кубковой схеме. Команда чемпион определяется в финальном матче, который является итогом длинной турнирной дистанции.
+                        Статистика последних мировых первенств красноречиво свидетельствует о растущем интересе к этим соревнованиям. В период проведения чемпионата, основная информация новостных агентств пестрит обзорами прошедших поединков. Новости с футбольных полей выходят на первый план, занимая важное место в жизни миллиардной армии болельщиков.
+                    </Paragraph>
+                </Section>
+                <Paragraph FontSize="14">
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/Brazil.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Bold>Статистика выступлений сборных:</Bold>
+                </Paragraph>
+                <Section FontSize="12" FontStyle="Italic">
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Бразилия - 5 титулов
+                        </Paragraph> 
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Германия - 4 титула
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Италия - 4 титула
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Аргентина - 3 титула
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Франция - 2 титула
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Уругвай - 2 титула
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Англия - 1 титул
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Испания - 1 титул
+                        </Paragraph>
+                    </ListItem>                    
+                </List>
+                </Section>
+                <Paragraph FontSize="14">
+                    <Bold>Лучшие бомбардиры в истории чемпионатов мира:</Bold>
+                    <Floater Width="100" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/Klose.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Section FontSize="12">
+                <Table>                    
+                    <Table.Columns>
+                        <TableColumn Width="0.2*" Background="Beige"/>
+                        <TableColumn Width="1.5*" Background="Aqua"/>
+                        <TableColumn Width="*" Background="Beige"/>
+                        <TableColumn Width="0.5*" Background="Aqua"/>
+                        <TableColumn Width="0.5*" Background="Beige"/>
+                        <TableColumn Width="0.5*" Background="Aqua"/>
+                        <TableColumn Width="2*" Background="Beige"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph Background="Chocolate">
+                                    <Italic>
+                                        <Bold>№</Bold>
+                                    </Italic>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="Chocolate">
+                                    <Italic>
+                                        <Bold>Футболист</Bold>
+                                    </Italic>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="Chocolate">
+                                    <Italic>
+                                        <Bold>Сборная</Bold>
+                                    </Italic>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="Chocolate">
+                                    <Italic>
+                                        <Bold>Голы</Bold>
+                                    </Italic>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="Chocolate">
+                                    <Italic>
+                                        <Bold>Матчи</Bold>
+                                    </Italic>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="Chocolate">
+                                    <Italic>
+                                        <Bold>В ср.</Bold>
+                                    </Italic>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="Chocolate">
+                                    <Italic>
+                                        <Bold>Турниры</Bold>
+                                    </Italic>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    1
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Мирослав Клозе
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Германия
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    16
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    24
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    0,67
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    2002, 2006, 2010, 2014
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    2
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Роналдо
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Бразилия
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    15
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    19
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    0,79
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    1994, 1998, 2002, 2006
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    3
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Герд Мюллер
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    ФРГ
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    14
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    13
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    1,08
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    1970, 1974
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                </Section>
+                <Paragraph>
+                    <Italic><Bold>Действующий обладатель кубка мира по футболу – сборная Аргентины.
+                    Аргентинцы взяли титул после 36-летнего перерыва.</Bold></Italic>
+                        <Floater HorizontalAlignment="Stretch">
+                        <BlockUIContainer>
+                            <Image Source="Data/Argentina.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Если понравилась статья, нажми"/>
+                        <Button Content="Нравится"/>
+                    </StackPanel> 
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Сохранить" Width="100" Click="Button_Click"/>
+            <Button Content="Открыть" Width="100" Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</Window>
